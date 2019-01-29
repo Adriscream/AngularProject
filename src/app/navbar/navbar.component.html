@@ -1,0 +1,21 @@
+
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse navbar-2">
+  <div class="container">
+    <a class="navbar-brand" routerLink="">
+      <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" height="30" class="d-inline-block align-top" alt="">
+      CryptoHacker
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarSupportedContent14" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown" [ngClass]="{ 'show': navbarOpen }">
+      <ul class="nav navbar-nav nav-display">
+        <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="">Home</a></li>  
+        <li class="nav-item"><a class="nav-link" routerLink="products">Products</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="product-add">Add</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="product-details/:id">Details</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="product-edit/:id">Edit</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
